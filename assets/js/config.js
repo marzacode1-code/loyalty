@@ -2,9 +2,8 @@
    CONFIGURACIÓN — cambia aquí los datos del negocio
    ========================================================================== */
 window.LOYALTY = {
-  // ⬇️  NÚMERO DE WHATSAPP: formato internacional SIN "+", SIN espacios.
-  //     Colombia = 57 + número. Ejemplo: 573001234567
-  whatsapp: "573012244719",   // Loyalty Tattoo Cali
+  // ⬇️  NÚMERO DE WHATSAPP: formato internacional SIN "+", SIN espacios (57 = Colombia).
+  whatsapp: "573012244719",   // Loyalty Tattoo Cali — alimenta TODOS los botones de WhatsApp
 
   instagram: "https://www.instagram.com/loyalty_tattoo_cali/",
 
