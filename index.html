@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Loyalty Tattoo Cali</title>
+<meta name="description" content="Estudio de tatuaje y remoción láser profesional en Cali, Colombia. Tatuajes con manos expertas y borrado de tatuajes personalizado." />
+<meta name="theme-color" content="#0b0b0c" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Loyalty Tattoo Cali" />
+<meta property="og:description" content="Tatuajes y remoción láser profesional en Cali. Cada proceso, personalizado." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" type="image/png" href="assets/img/brand/logo.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=Pirata+One&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+
+<script>
+  /* Aplica el tema guardado antes de pintar (evita parpadeo) */
+  (function () {
+    try {
+      var t = localStorage.getItem("loyalty-theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      else document.documentElement.removeAttribute("data-theme");
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<!-- ======================  NAV  ====================== -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Loyalty Tattoo Cali">
+      <img class="logo-img" src="assets/img/brand/logo.png" alt="Loyalty"
+           onerror="this.closest('.brand').classList.add('no-logo')" />
+      <span class="brand-text">
+        <span class="word">Loyalty</span>
+        <span class="sub">Tattoo · Cali</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#procedimiento" data-i18n="nav.proc">Procedimiento</a>
+      <a href="#resultados" data-i18n="nav.resultados">Resultados</a>
+      <a href="#pqrs" data-i18n="nav.pqrs">PQRS</a>
+      <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
+    </nav>
+
+    <div class="nav-tools">
+      <button class="tool-btn lang-btn" id="langBtn" type="button" aria-label="Idioma">
+        <span class="es on">ES</span><span aria-hidden="true">/</span><span class="en off">EN</span>
+      </button>
+      <button class="tool-btn" id="themeBtn" type="button" aria-label="Cambiar tema claro/oscuro">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn-primary nav-cta" href="#" data-wa="generic" target="_blank" rel="noopener" data-i18n="nav.cta" style="padding:11px 20px;font-size:.85rem;">Cotizar</a>
+      <button class="tool-btn burger" id="burger" type="button" aria-label="Menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ======================  MENÚ MÓVIL  ====================== -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mm-close" id="mmClose" type="button" aria-label="Cerrar">✕</button>
+  <a href="#procedimiento" data-i18n="nav.proc">Procedimiento</a>
+  <a href="#resultados" data-i18n="nav.resultados">Resultados</a>
+  <a href="#pqrs" data-i18n="nav.pqrs">PQRS</a>
+  <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
+  <a href="#" data-wa="generic" target="_blank" rel="noopener" data-i18n="nav.cta" style="color:var(--muted);font-size:1.4rem;">Cotizar</a>
+</div>
+
+<!-- ======================  HERO  ====================== -->
+<section class="hero" id="inicio">
+  <video class="hero-video" id="heroVideo" poster="assets/video/poster.jpg"
+         autoplay muted loop playsinline preload="auto">
+    <source src="assets/video/header.webm" type="video/webm" />
+    <source src="assets/video/header.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-scrim"></div>
+
+  <div class="wrap hero-inner">
+    <span class="eyebrow" data-i18n="hero.eyebrow">Estudio de tatuaje & remoción láser · Cali</span>
+    <h1>
+      <span data-i18n="hero.h1a">Lo que quieres,</span><br />
+      <span class="thin" data-i18n="hero.h1b">y lo que ya no.</span>
+    </h1>
+    <p class="hero-sub" data-i18n="hero.sub">Tatuajes con manos expertas y remoción láser profesional en el corazón de Cali.</p>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#" data-wa="generic" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm5.7 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.8-.1 1.5z"/></svg>
+        <span data-i18n="hero.cta1">Cotizar por WhatsApp</span>
+      </a>
+      <a class="btn btn-outline" href="#resultados" data-i18n="hero.cta2">Ver resultados</a>
+    </div>
+
+    <div class="hero-badges">
+      <div class="hero-badge"><b data-i18n="hero.badge1b">Cali</b><span data-i18n="hero.badge1s">Colombia</span></div>
+      <div class="hero-badge"><b data-i18n="hero.badge2b">Láser</b><span data-i18n="hero.badge2s">Grado profesional</span></div>
+      <div class="hero-badge"><b data-i18n="hero.badge3b">1:1</b><span data-i18n="hero.badge3s">Valoración personalizada</span></div>
+    </div>
+  </div>
+
+  <!-- Botón de sonido GRANDE -->
+  <button class="sound-btn" id="soundBtn" type="button" aria-pressed="false">
+    <span class="ico">
+      <svg class="play-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8.5a4 4 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+    </span>
+    <span class="txt">
+      <b class="t-title">Sonido</b>
+      <small class="t-hint">Toca para activar</small>
+    </span>
+  </button>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span class="line"></span>
+    <span data-i18n="hero.scroll">Desliza</span>
+  </div>
+</section>
+
+<!-- ======================  PROCEDIMIENTO  ====================== -->
+<section class="section" id="procedimiento">
+  <div class="wrap">
+    <div class="proc-grid">
+      <div class="proc-photo reveal">
+        <img src="assets/img/procedimiento/proceso.jpg" alt="Proceso en Loyalty Tattoo Cali" />
+        <span class="stamp" data-i18n="proc.stamp">Manos expertas</span>
+      </div>
+
+      <div class="proc-sticky reveal">
+        <span class="eyebrow" data-i18n="proc.eyebrow">Cómo trabajamos</span>
+        <div class="section-head" style="margin-bottom:22px;">
+          <h2 data-i18n="proc.h2">El procedimiento</h2>
+        </div>
+        <p class="proc-intro" data-i18n="proc.intro">Estás bajo manos expertas…</p>
+
+        <div class="proc-tabs" role="tablist">
+          <button class="proc-tab active" data-proc="removal" role="tab" data-i18n="proc.tabRemoval">Remoción láser</button>
+          <button class="proc-tab" data-proc="tattoo" role="tab" data-i18n="proc.tabTattoo">Tatuaje</button>
+        </div>
+
+        <!-- Pasos REMOCIÓN -->
+        <div class="steps" id="stepsRemoval">
+          <div class="step"><span class="step-num">1</span><div><h4 data-i18n="proc.r1h">Agenda tu consulta</h4><p data-i18n="proc.r1p"></p></div></div>
+          <div class="step"><span class="step-num">2</span><div><h4 data-i18n="proc.r2h">Valoración</h4><p data-i18n="proc.r2p"></p></div></div>
+          <div class="step"><span class="step-num">3</span><div><h4 data-i18n="proc.r3h">Primera sesión de láser</h4><p data-i18n="proc.r3p"></p></div></div>
+          <div class="step"><span class="step-num">4</span><div><h4 data-i18n="proc.r4h">Plan de sesiones</h4><p data-i18n="proc.r4p"></p></div></div>
+        </div>
+
+        <!-- Pasos TATUAJE -->
+        <div class="steps" id="stepsTattoo" hidden>
+          <div class="step"><span class="step-num">1</span><div><h4 data-i18n="proc.t1h">Cuéntanos tu idea</h4><p data-i18n="proc.t1p"></p></div></div>
+          <div class="step"><span class="step-num">2</span><div><h4 data-i18n="proc.t2h">Cotización del diseño</h4><p data-i18n="proc.t2p"></p></div></div>
+          <div class="step"><span class="step-num">3</span><div><h4 data-i18n="proc.t3h">Agenda tu cita</h4><p data-i18n="proc.t3p"></p></div></div>
+          <div class="step"><span class="step-num">4</span><div><h4 data-i18n="proc.t4h">Día del tatuaje</h4><p data-i18n="proc.t4p"></p></div></div>
+          <div class="step"><span class="step-num">5</span><div><h4 data-i18n="proc.t5h">Cuidados posteriores</h4><p data-i18n="proc.t5p"></p></div></div>
+        </div>
+
+        <div class="proc-note" data-i18n="proc.note">No publicamos precios fijos…</div>
+
+        <div class="proc-actions">
+          <a class="btn btn-primary" href="#" data-wa="proc" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm5.7 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.8-.1 1.5z"/></svg>
+            <span data-i18n="proc.cta1">Cotizar por WhatsApp</span>
+          </a>
+          <a class="btn btn-ghost" href="#resultados" data-i18n="proc.cta2">Ver resultados</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================  RESULTADOS  ====================== -->
+<section class="section section-alt" id="resultados">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="res.eyebrow">Antes & después</span>
+      <h2 data-i18n="res.h2">Resultados reales</h2>
+      <p data-i18n="res.p">Trabajos de tatuaje y procesos de remoción hechos en el estudio.</p>
+    </div>
+
+    <div class="filters reveal">
+      <button class="filter" data-cat="all" aria-pressed="true" data-i18n="res.fAll">Todos</button>
+      <button class="filter" data-cat="removal" aria-pressed="false" data-i18n="res.fRemoval">Borrado / Remoción</button>
+      <button class="filter" data-cat="tattoo" aria-pressed="false" data-i18n="res.fTattoo">Tatuajes</button>
+    </div>
+
+    <div class="gallery reveal">
+      <figure class="shot" data-cat="removal"><span class="tag" data-i18n="res.tagRemoval">Remoción</span><img src="assets/img/resultados/borrado-1.jpg" alt="Antes y después: remoción de tatuaje en el hombro" loading="lazy" /></figure>
+      <figure class="shot" data-cat="tattoo"><span class="tag" data-i18n="res.tagTattoo">Tatuaje</span><img src="assets/img/resultados/tatuaje-1.jpg" alt="Tatuaje realista de tigre en el brazo" loading="lazy" /></figure>
+      <figure class="shot" data-cat="removal"><span class="tag" data-i18n="res.tagRemoval">Remoción</span><img src="assets/img/resultados/borrado-2.jpg" alt="Antes y después: remoción de tatuaje en la muñeca" loading="lazy" /></figure>
+      <figure class="shot" data-cat="tattoo"><span class="tag" data-i18n="res.tagTattoo">Tatuaje</span><img src="assets/img/resultados/tatuaje-2.jpg" alt="Tatuaje realista de tigre rugiendo en el antebrazo" loading="lazy" /></figure>
+      <figure class="shot" data-cat="removal"><span class="tag" data-i18n="res.tagRemoval">Remoción</span><img src="assets/img/resultados/borrado-3.jpg" alt="Antes y después: remoción de tatuaje en la espalda" loading="lazy" /></figure>
+      <figure class="shot" data-cat="removal"><span class="tag" data-i18n="res.tagRemoval">Remoción</span><img src="assets/img/resultados/borrado-4.jpg" alt="Sesión de remoción láser en el estudio" loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======================  PQRS  ====================== -->
+<section class="section" id="pqrs">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="pqrs.eyebrow">Preguntas frecuentes</span>
+      <h2 data-i18n="pqrs.h2">Preguntas & respuestas</h2>
+      <p data-i18n="pqrs.p">Toca un video para ver la respuesta directamente en nuestro Instagram.</p>
+    </div>
+
+    <div class="pqrs-grid reveal">
+      <a class="faq-card" data-pqrs href="#" target="_blank" rel="noopener">
+        <img src="assets/img/pqrs/video-1.jpg" alt="Video de preguntas y respuestas 1" loading="lazy" />
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        <div class="cap"><span class="q" data-i18n="pqrs.q">Video</span><h4 data-i18n="pqrs.c1">Resolvemos tus dudas — Parte 1</h4></div>
+      </a>
+      <a class="faq-card" data-pqrs href="#" target="_blank" rel="noopener">
+        <img src="assets/img/pqrs/video-2.jpg" alt="Video de preguntas y respuestas 2" loading="lazy" />
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        <div class="cap"><span class="q" data-i18n="pqrs.q">Video</span><h4 data-i18n="pqrs.c2">Resolvemos tus dudas — Parte 2</h4></div>
+      </a>
+    </div>
+    <p class="pqrs-more reveal" data-i18n="pqrs.more">¿Tienes otra pregunta? Escríbenos por WhatsApp.</p>
+  </div>
+</section>
+
+<!-- ======================  CONTACTO  ====================== -->
+<section class="section section-alt" id="contacto">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="con.eyebrow">Estamos en Cali</span>
+      <h2 data-i18n="con.h2">Contacto</h2>
+      <p data-i18n="con.p">Escríbenos, síguenos o ven a visitarnos.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a class="info-row" data-wa="generic" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm5.7 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.8-.1 1.5z"/></svg></span>
+          <span><span class="k" data-i18n="con.kWa">WhatsApp</span><span class="v" data-i18n="con.vWa">Escríbenos ahora</span></span>
+        </a>
+        <a class="info-row" data-ig target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span>
+          <span><span class="k" data-i18n="con.kIg">Instagram</span><span class="v">@loyalty_tattoo_cali</span></span>
+        </a>
+        <a class="info-row" data-map-dir target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <span><span class="k" data-i18n="con.kAddr">Dirección</span><span class="v" data-i18n="con.vAddr">Carrera 25 # 3-12, Cali, Colombia</span></span>
+        </a>
+        <div class="info-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <span><span class="k" data-i18n="con.kAppt">Citas</span><span class="v" data-i18n="con.vAppt">Con cita previa</span></span>
+        </div>
+
+        <div class="contact-ctas">
+          <a class="btn btn-primary" data-wa="generic" target="_blank" rel="noopener" data-i18n="con.ctaWa">Escríbenos</a>
+          <a class="btn btn-ghost" data-ig target="_blank" rel="noopener" data-i18n="con.ctaIg">Seguir en Instagram</a>
+          <a class="btn btn-ghost" data-map-dir target="_blank" rel="noopener" data-i18n="con.ctaMap">Cómo llegar</a>
+        </div>
+      </div>
+
+      <div class="map-card reveal">
+        <iframe id="mapFrame" title="Mapa Loyalty Tattoo Cali" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="map-bar">
+          <div class="addr"><b data-i18n="con.mapLabel">Dirección</b><span data-i18n="con.vAddr">Carrera 25 # 3-12, Cali, Colombia</span></div>
+          <a class="btn btn-primary" data-map-dir target="_blank" rel="noopener" style="padding:11px 18px;font-size:.85rem;" data-i18n="con.mapOpen">Abrir en Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================  FOOTER  ====================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <span class="brand-text" style="gap:2px;">
+          <span class="word" style="font-family:var(--f-logo);font-size:2.2rem;">Loyalty</span>
+          <span class="sub" data-i18n="foot.tag">Tatuaje & remoción láser · Cali, Colombia</span>
+        </span>
+      </div>
+      <nav class="footer-links" aria-label="Pie">
+        <a href="#procedimiento" data-i18n="nav.proc">Procedimiento</a>
+        <a href="#resultados" data-i18n="nav.resultados">Resultados</a>
+        <a href="#pqrs" data-i18n="nav.pqrs">PQRS</a>
+        <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
+      </nav>
+      <div class="footer-social">
+        <a data-ig target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        <a data-wa="generic" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm5.7 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.8-.1 1.5z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="foot.rights">© 2026 Loyalty Tattoo Cali.</span>
+      <span data-i18n="foot.made">Hecho con orgullo en Cali.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a class="wa-float" id="waFloat" data-wa="generic" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm5.7 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.8-.1 1.5z"/></svg>
+</a>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+  <button class="close" id="lbClose" type="button" aria-label="Cerrar">✕</button>
+  <button class="nav-arrow prev" id="lbPrev" type="button" aria-label="Anterior">‹</button>
+  <img id="lbImg" src="" alt="" />
+  <button class="nav-arrow next" id="lbNext" type="button" aria-label="Siguiente">›</button>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
